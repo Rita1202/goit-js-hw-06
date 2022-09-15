@@ -49,3 +49,10 @@ ul {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
+.main-box {
+  width: 1200px;
+  min-height: 400px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
