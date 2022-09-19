@@ -37,6 +37,7 @@ dectroyEl.addEventListener("click", onDestroyBtnClick);
 
 function onDestroyBtnClick() {
   boxesEl.innerHTML = "";
+  inputEl.value = "";
 }
 
 // const element = array[index];
