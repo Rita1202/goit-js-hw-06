@@ -16,7 +16,7 @@ function getUserInfo(event) {
     };
 
     console.log(userInfo);
-  }
 
-  event.currentTarget.reset();
+    event.currentTarget.reset();
+  }
 }

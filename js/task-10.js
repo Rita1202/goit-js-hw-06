@@ -19,9 +19,10 @@ function onBntCreatedBoxesClick() {
 const boxesEl = document.querySelector("#boxes");
 boxesEl.classList.add("main-box");
 
+let side = 20;
+
 function createBoxes(amount) {
   const array = [];
-  let side = 20;
   for (let index = 0; index < amount; index++) {
     side += 10;
     const divMakup = `<div style='width: ${side}px; height:${side}px; background-color: ${getRandomHexColor()}'></div>`;
@@ -29,7 +30,7 @@ function createBoxes(amount) {
   }
 
   const string = array.join("");
-  boxesEl.insertAdjacentHTML("afterbegin", string);
+  boxesEl.insertAdjacentHTML("beforeend", string);
 }
 
 const dectroyEl = document.querySelector("[data-destroy]");
@@ -38,6 +39,7 @@ dectroyEl.addEventListener("click", onDestroyBtnClick);
 function onDestroyBtnClick() {
   boxesEl.innerHTML = "";
   inputEl.value = "";
+  side = 20;
 }
 
 // const element = array[index];

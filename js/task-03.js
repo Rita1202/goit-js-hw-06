@@ -16,7 +16,7 @@ const images = [
 function createMarkup() {
   const res = images
     .map((image) => {
-      return `<li class="gallery-item"><img class="gallery-img" src=${image.url} alt=${image.alt}/></li>`;
+      return `<li class="gallery-item"><img class="gallery-img" src='${image.url}' alt='${image.alt}'/></li>`;
     })
     .join("");
 
